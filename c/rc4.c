@@ -7,7 +7,7 @@ typedef unsigned long ULONG;
 void rc4_init(unsigned char *s, unsigned char *key, unsigned long Len) //初始化函数
 {
     int i =0, j = 0;
-    char k[256] = {0};
+    unsigned char k[256] = {0};
     unsigned char tmp = 0;
     for (i=0;i<256;i++) {
         s[i] = i;
